@@ -7,6 +7,8 @@ document.getElementById('blogForm').addEventListener('submit', function(event) {
     const title = document.getElementById('title').value;
     const content = document.getElementById('content').value;
 
+// Add If and Else Statement and Select Username, Title, and Content.
+// Else Statement will tell user to complete fields if empty before submitting.
     if (username && title && content) {
         const newPost = {
             username: username,
