@@ -15,7 +15,7 @@ document.getElementById('blogForm').addEventListener('submit', function(event) {
             title: title,
             content: content
         };
-
+// Log blog posts into the browsers localStorage.
         let posts = JSON.parse(localStorage.getItem('blogPosts')) || [];
         posts.push(newPost);
         localStorage.setItem('blogPosts', JSON.stringify(posts));
